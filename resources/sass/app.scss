@@ -1,0 +1,65 @@
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Custom styles
+.sidebar {
+    min-height: calc(100vh - 56px);
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    
+    .nav-link {
+        color: #ecf0f1;
+        padding: 0.75rem 1rem;
+        margin: 2px 0;
+        transition: all 0.3s;
+        
+        &:hover {
+            background: rgba(255,255,255,0.1);
+            color: #ffffff;
+        }
+        
+        &.active {
+            background: rgba(52, 152, 219, 0.3);
+            color: #ffffff;
+            border-left: 4px solid #3498db;
+        }
+    }
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 0.5rem;
+}
+
+.badge-todo {
+    background-color: #6c757d;
+}
+
+.badge-in_progress {
+    background-color: #17a2b8;
+}
+
+.badge-done {
+    background-color: #28a745;
+}
+
+.priority-high {
+    border-left: 4px solid #dc3545;
+}
+
+.priority-medium {
+    border-left: 4px solid #ffc107;
+}
+
+.priority-low {
+    border-left: 4px solid #28a745;
+}
+
+// Status colors
+.status-active { color: #28a745; }
+.status-completed { color: #17a2b8; }
+.status-on_hold { color: #ffc107; }
